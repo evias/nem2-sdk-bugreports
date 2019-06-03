@@ -1,0 +1,27 @@
+{
+    "name": "nem2-deadline-testcase",
+    "version": "0.1.0",
+    "license": "MIT",
+    "author": {
+        "name": "Grégory Saive",
+        "email": "greg@evias.be",
+        "url": "https://github.com/evias"
+    },
+    "description": "NEM2 Blockchain Test Case for Error Resolution with Deadlines",
+    "keywords": [
+        "nem",
+        "catapult"
+    ],
+    "dependencies": {
+        "nem2-sdk": "0.11.5",
+        "nem2-library": "0.9.18",
+        "tslint": "^5.8.0",
+        "typescript": "^2.5.3",
+        "typescript-require": "^0.2.9-1",
+        "rxjs": "^6.4.0"
+    },
+    "scripts": {
+        "build": "rm -rf dist/ && tsc",
+        "start": "npm run build && node dist/index.js"
+    }
+}
