@@ -107,7 +107,7 @@ export class UsePrivateNetworkDeadline extends TestCase {
             testCase_hash_dynamicDeadline = signedTransaction_dynamicDeadline.hash;
         });
 
-        transactionHttp.announce(signedTransaction_dynamicDeadline).subscribe(() => {
+        transactionHttp.announce(signedTransaction_staticDeadline).subscribe(() => {
             console.log("Transaction 2 announced!");
             console.log("Hash: ", signedTransaction_staticDeadline.hash);
 
